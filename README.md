@@ -9,7 +9,7 @@ python3 Wrapper.py
 ```
 
 ### Phase 2 - Deep Dive on Deep Learning
-In Phase 2, we implement various image classification networks based on the CIFAR10 dataset. The following sections will show the experiment details of simple ConvNet, improved ConvNet, ResNet, ResNext, and DenseNet.
+In Phase 2, we implement various image classification networks based on the CIFAR10 dataset. 
 
 #### Usage
 To train the model, you can run the following command. The default of the training epoch was set to 5. This will train a simple ConvNet. You can also train different architectures of image classifiers: `ConvNet: 0, ResNet: 1, ResNeXt: 2, and DenseNet: 3`.
