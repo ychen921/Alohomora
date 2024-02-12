@@ -20,6 +20,11 @@ If you desire to set a specific number training epoch, you can run the following
 ```
 python3 Train.py --NumEpochs 10 --model 0
 ```
+If you are not putting the dataset in the default directory, you can use this command.
+```
+python Train.py --NumEpochs 5 --BasePath '{directory of CIFAR10 dataset}/CIFAR10'
+```
+
 
 To test the model, you can run the following command. Please ensure that the setting of `--NumEpochs` should be the same as the training epoch as well as `--model`.
 ```
