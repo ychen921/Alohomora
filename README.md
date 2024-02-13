@@ -11,7 +11,7 @@ python3 Wrapper.py
 ## Phase 2 - Deep Dive on Deep Learning
 In Phase 2, we implement various image classification networks based on the CIFAR10 dataset. 
 
-### Usage
+### Training
 To train the model, you can run the following command. The default of the training epoch was set to 5. This will train a simple ConvNet. You can also train different architectures of image classifiers: `ConvNet: 0, ResNet: 1, ResNeXt: 2, and DenseNet: 3`.
 ```
 python3 Train.py --model 0
@@ -25,7 +25,7 @@ If you are not putting the dataset in the default directory, you can use this co
 python Train.py --NumEpochs 10 --BasePath '{directory of CIFAR10 dataset}/CIFAR10'
 ```
 
-
+### Testing
 To test the model, you can run the following command. Please ensure that the setting of `--NumEpochs` should be the same as the training epoch as well as `--model`.
 ```
 python3 Test.py --NumEpochs 10 --model 0
