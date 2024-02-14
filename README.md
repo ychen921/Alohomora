@@ -1,6 +1,6 @@
 # Alohomora
-CMSC733 Homework 0
-This project report was composed of two parts. In Phase 1, we implement a simplified version of the pb-lite edge detection technique. In Phase 2, we developed multiple image classification neural networks such as simple ConvNet, ResNet, ResNeXt, and DenseNet based on the CIFAR10 dataset.
+CMSC733 - Homework 0<br />
+This project was composed of two parts. In Phase 1, we implement a simplified version of the pb-lite edge detection technique. In Phase 2, we developed multiple image classification neural networks such as simple ConvNet, ResNet, ResNeXt, and DenseNet based on the CIFAR10 dataset. To find more details, please look into the report.
 
 ## Phase 1 - Shake My Boundary
 In phase 1, we will implement a simple pb-lite edge detection algorithm. First, generate four filter banks which are oriented Derivative of Gaussian (DoG), Leung-Malik (LM), Gabor, and Half-disc. By using these filters, we can create a texture map of the image. Also, use KMeans clustering to generate brightness and color. Then, implement chi-square distance combined with sobel and canny edges. we will have pb-lite edges. Please find more details in the `report.pdf`. To implement it, you can use the following command.
