@@ -1,4 +1,4 @@
-# Alohomora
+# Overview
 CMSC733 - Homework 0<br />
 This project was composed of two parts. In Phase 1, we implement a simplified version of the pb-lite edge detection technique. In Phase 2, we developed multiple image classification neural networks such as simple ConvNet, ResNet, ResNeXt, and DenseNet based on the CIFAR10 dataset. To find more details, please look into the report.
 
@@ -12,15 +12,15 @@ python3 Wrapper.py
 In Phase 2, we implement various image classification networks based on the CIFAR10 dataset. 
 
 ### Training
-To train the model, you can run the following command. The default of the training epoch was set to 5. This will train a simple ConvNet. You can also train different architectures of image classifiers: `ConvNet: 0, ResNet: 1, ResNeXt: 2, and DenseNet: 3`.
+To train the model, you can run the following command. The default of the training epoch was set to 5. This will train a simple ConvNet. You can also select different architectures of image classifiers by `--Model`: `ConvNet: 0, ResNet: 1, ResNeXt: 2, and DenseNet: 3`.
 ```
 python3 Train.py --Model 0
 ```
-If you desire to set a specific number training epoch, you can run the following command:
+If you desire to set a specific number training epoch, you can run the following command `--NumEpochs`:
 ```
 python3 Train.py --NumEpochs 10 --Model 0
 ```
-If you are not putting the dataset in the default directory, you can use this command.
+If you are not putting the dataset in the default directory, you can use this command `--BasePath`.
 ```
 python Train.py --NumEpochs 10 --BasePath '{directory of CIFAR10 dataset}/CIFAR10'
 ```
@@ -31,7 +31,7 @@ To test the model, you can run the following command. Please ensure that the set
 python3 Test.py --NumEpochs 10 --model 0
 ```
 
-If you are not putting the dataset in the default directory, you can use this command.
+If you are not putting the dataset in the default directory, you can use this command `--BasePath`.
 ```
 python3 Test.py --NumEpochs 10 --model 0 --BasePath '{directory of CIFAR10 dataset}/CIFAR10/Test'
 ```
